@@ -51,4 +51,11 @@ export default createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
+  .container{
+    height:100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+  }
 `;

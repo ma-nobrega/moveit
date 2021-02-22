@@ -1,7 +1,13 @@
 import React from 'react';
 
+import ExperienceBar from '../../components/ExperienceBar';
+
 const Home: React.FC = () => {
-  return <h1>Teste</h1>;
+  return (
+    <div className="container">
+      <ExperienceBar />
+    </div>
+  );
 };
 
 export default Home;
