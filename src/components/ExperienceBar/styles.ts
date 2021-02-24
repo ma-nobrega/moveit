@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.header`
   display: flex;
   align-items: center;
+  margin-top: 1.5rem;
   span {
     font-size: 1rem;
   }
