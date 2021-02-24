@@ -1,11 +1,13 @@
+import Head from 'next/head';
+
 import ExperienceBar from "../components/ExperienceBar";
 import Profile from "../components/Profile";
 import CompletedChallenges from "../components/CompletedChallenges";
 import Countdown from "../components/Countdown";
+import ChallengeBox from "../components/ChallengeBox";
 
-import {Container } from './styles';
+import { Container } from './styles';
 
-import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -13,15 +15,17 @@ export default function Home() {
       <Head>
         <title>Inicio | move.it</title>
       </Head>
-    <ExperienceBar />
-    <section>
-      <div>
-        <Profile />
-        <CompletedChallenges />
-        <Countdown />
-      </div>
-      <div></div>
-    </section>
-  </Container>
+      <ExperienceBar />
+      <section>
+        <div>
+          <Profile />
+          <CompletedChallenges />
+          <Countdown />
+        </div>
+        <div>
+          <ChallengeBox />
+        </div>
+      </section>
+    </Container>
   )
 }
