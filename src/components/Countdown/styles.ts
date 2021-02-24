@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.div`
   display:flex;
@@ -29,5 +30,43 @@ export const Container = styled.div`
   >span{
     font-size: 6.25rem;
     margin: 0 0.5rem;
+  }
+`;
+
+export const CountdownButton = styled.button`
+  width:100%;
+  height: 5rem;
+  margin-top: 2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:0;
+  border-radius:5px;
+  background: var(--blue);
+  color: var(--white);
+  font-size:1.25rem;
+  font-weight:600;
+  transition: background-color 0.2s;
+  &:not(:disabled):hover {
+    background-color: ${darken(0.05, '#5965e0')};
+  }
+  >img{
+    margin-left: 0.5rem;
+  }
+  &.active{
+    background-color: var(--white);
+    color: var(--title);
+    &:not(:disabled):hover {
+      background-color: var(--red);
+      color: var(--white);
+      >img{
+        color: var(--white);
+      }
+    }
+  }
+  &:disabled{
+    background-color: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
   }
 `;

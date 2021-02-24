@@ -5,9 +5,14 @@ import Countdown from "../components/Countdown";
 
 import {Container } from './styles';
 
+import Head from 'next/head';
+
 export default function Home() {
   return (
     <Container className="container">
+      <Head>
+        <title>Inicio | move.it</title>
+      </Head>
     <ExperienceBar />
     <section>
       <div>
