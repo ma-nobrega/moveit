@@ -6,9 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Global />
-      <ChallengesProvider>
-          <Component {...pageProps} />
-      </ChallengesProvider>
+      <Component {...pageProps} />
     </>
   )
 }
