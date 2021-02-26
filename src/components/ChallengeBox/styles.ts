@@ -11,6 +11,9 @@ export const Container = styled.div`
   justify-content:center;
   text-align:center;
   padding: 0 1.5rem;
+  @media(max-width: 720px){
+    padding: 0.8rem;
+  }
 `;
 
 
@@ -26,12 +29,16 @@ export const NotActive = styled.div`
   p{
     display:flex;
     align-items:center;
+    flex-direction:column;
     line-height:1.4;
     max-width:70%;
     margin-top: 3rem;
     img{
-      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
     }
+  }
+  @media(max-width: 720px){
+    height: 16rem;
   }
 `;
 

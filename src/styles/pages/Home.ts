@@ -9,5 +9,15 @@ export const Container = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 6.25rem;
     align-content:center;
+    @media(max-width: 720px){
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap:0;
+      margin-top: 2.4rem;
+      >div + div{
+        margin: 2.4rem 0;
+      }
+    }
   }
 `

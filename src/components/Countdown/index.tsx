@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { CountdownContext } from '../../contexts/CountdownContext';
 import { Container, CountdownButton } from './styles';
 
+import {FiX} from 'react-icons/fi'
+
 const Countdown: React.FC = () => {
   const {
     minutes,
@@ -43,7 +45,7 @@ const Countdown: React.FC = () => {
                 className="active"
               >
                 Abandonar ciclo
-                <img src="icons/close.svg" alt="start" />
+                <FiX />
               </CountdownButton>
             ) : (
                 <CountdownButton

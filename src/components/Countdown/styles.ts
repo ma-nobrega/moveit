@@ -50,7 +50,7 @@ export const CountdownButton = styled.button`
   &:not(:disabled):hover {
     background-color: ${darken(0.05, '#5965e0')};
   }
-  >img{
+  >svg, img{
     margin-left: 0.5rem;
   }
   &.active{
