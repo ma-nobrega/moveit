@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
+
 export const Container = styled.div`
+  grid-area: CD;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+`;
+
+export const Timer = styled.div`
   display:flex;
   align-items:center;
   font-family: Rajdhani;

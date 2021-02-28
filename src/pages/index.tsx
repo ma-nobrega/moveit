@@ -29,17 +29,12 @@ export default function Home(props: HomeProps) {
         <Head>
           <title>Inicio | move.it</title>
         </Head>
-        <ExperienceBar />
+        <Profile />
         <CountdownProvider>
           <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
+            <CompletedChallenges />
+            <Countdown />
+            <ChallengeBox />
           </section>
         </CountdownProvider>
       </Container>

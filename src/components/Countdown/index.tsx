@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CountdownContext } from '../../contexts/CountdownContext';
-import { Container, CountdownButton } from './styles';
+import { Container, Timer, CountdownButton } from './styles';
 
 import {FiX} from 'react-icons/fi'
 
@@ -18,8 +18,8 @@ const Countdown: React.FC = () => {
   const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
 
   return (
-    <div>
-      <Container>
+    <Container>
+      <Timer>
         <div>
           <span>{minuteLeft}</span>
           <span>{minuteRight}</span>
@@ -29,7 +29,7 @@ const Countdown: React.FC = () => {
           <span>{secondLeft}</span>
           <span>{secondRight}</span>
         </div>
-      </Container>
+      </Timer>
       {hasFinished ? (
         <CountdownButton
           disabled
@@ -59,7 +59,7 @@ const Countdown: React.FC = () => {
             }
           </>
         )}
-    </div >
+    </Container >
   );
 }
 

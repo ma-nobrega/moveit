@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  grid-area: CB;
   height:100%;
   background: var(--white);
   border-radius: 5px;

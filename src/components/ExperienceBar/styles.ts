@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const Container = styled.header`
+export const Container = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 1.5rem;
+  width: 100%;
   span {
     font-size: 1rem;
   }

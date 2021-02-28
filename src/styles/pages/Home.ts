@@ -7,8 +7,13 @@ export const Container = styled.div`
     flex: 1;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6.25rem;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    'CC CC'
+    'CD CB';
+    gap: 0 6.25rem;
     align-content:center;
+    margin: 1rem 0;
     @media(max-width: 720px){
       display:flex;
       flex-direction: column;
