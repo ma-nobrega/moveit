@@ -85,6 +85,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
     let finalExperience = currentExperience + amount;
     if (finalExperience >= experienceToNextLevel) {
       finalExperience = finalExperience - experienceToNextLevel;
+      new Audio('/applause.mp3').play();
       levelUp();
     }
     setCurrentExperience(finalExperience);

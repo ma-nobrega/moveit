@@ -1,6 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 100%;
+  height:100vh;
+  display:grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    'HD CT';
+    gap: 0 2rem;
+`
+
+export const Content = styled.div`
+  grid-area: CT;
   display:flex;
   flex-direction:column;
   section{
@@ -25,4 +36,4 @@ export const Container = styled.div`
       }
     }
   }
-`
+`;

@@ -33,7 +33,7 @@ export const Experience = styled.div`
       strong{
       font-size: clamp(0.5rem , 1.2rem, 1.8rem);
       font-weight:600;
-      color: var(--title);
+      color: ${props => props.theme.colors.title};
     }
     @media(max-width:430px){
       flex-direction:column;

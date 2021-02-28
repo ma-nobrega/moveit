@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import { GetServerSideProps } from 'next'
 
-import ExperienceBar from "../components/ExperienceBar";
 import Profile from "../components/Profile";
 import CompletedChallenges from "../components/CompletedChallenges";
 import Countdown from "../components/Countdown";
 import ChallengeBox from "../components/ChallengeBox";
+import Nav from "../components/Nav";
 
-import { Container } from '../styles/pages/Home';
+import { Container, Content } from '../styles/pages/Home';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 
@@ -25,19 +25,22 @@ export default function Home(props: HomeProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
-      <Container className="container">
-        <Head>
-          <title>Inicio | move.it</title>
-        </Head>
-        <Profile />
-        <CountdownProvider>
-          <section>
-            <CompletedChallenges />
-            <Countdown />
-            <ChallengeBox />
-          </section>
-        </CountdownProvider>
-      </Container>
+        <Container >
+          <Nav />
+          <Content className="container">
+            <Head>
+              <title>Inicio | move.it</title>
+            </Head>
+            <Profile />
+            <CountdownProvider>
+              <section>
+                <CompletedChallenges />
+                <Countdown />
+                <ChallengeBox />
+              </section>
+            </CountdownProvider>
+          </Content>
+        </Container>
     </ChallengesProvider>
   )
 }

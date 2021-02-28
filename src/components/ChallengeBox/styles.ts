@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   grid-area: CB;
   height:100%;
-  background: var(--white);
+  background: ${props => props.theme.colors.backgroundSecondary};
   border-radius: 5px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   display:flex;
@@ -48,11 +48,11 @@ export const Active = styled.div`
   display:flex;
   flex-direction:column;
   header{
-    color: var(--blue);
+    color: ${props => props.theme.colors.primary};
     font-weight:600;
     font-size: 1.25rem;
     padding: 1rem 0;
-    border-bottom: 1px solid var(--gray-line);
+    border-bottom: 1px solid ${props => props.theme.colors.grayLine};;
   }
   main{
     flex:1;
@@ -63,7 +63,7 @@ export const Active = styled.div`
     strong{
       font-size: 2rem;
       font-weight: 600;
-      color: var(--title);
+      color: ${props => props.theme.colors.title};
       margin: 1.5rem 0 1rem;
     }
     p{
@@ -85,15 +85,15 @@ export const ChallengeButton = styled.button`
   justify-content:center;
   border: 0;
   border-radius: 5px;
-  color: var(--white);
+  color: ${props => props.theme.colors.buttonTextColor};
   font-size: 1rem;
   font-weight: 600;
   transition: filter 0.2s;
   &.failed{
-    background: var(--red);
+    background: ${props => props.theme.colors.red};
   }
   &.succeeded{
-    background: var(--green);
+    background: ${props => props.theme.colors.green};
   }
   &:hover{
     filter: brightness(0.9);

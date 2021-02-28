@@ -24,17 +24,17 @@ export const Container = styled.div`
   header{
     font-size: 8.75rem;
     font-weight: 600;
-    color: var(--blue);
+    color: ${props => props.theme.colors.primary};
     background: url('/icons/levelup.svg') no-repeat center;
     background-size: contain;
   }
   strong{
     font-size: 2.25rem;
-    color: var(--title);
+    color: ${props => props.theme.colors.title};
   }
   p{
     font-size: 2.25rem;
-    color: var(--title);
+    color: ${props => props.theme.colors.title};
   }
   button{
     position: absolute;
