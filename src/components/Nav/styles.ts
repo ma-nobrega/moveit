@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container= styled.div`
+export const Container = styled.div`
   grid-area: HD;
   width: 6rem;
   padding: 2rem 0;
@@ -14,5 +14,11 @@ export const Container= styled.div`
     width: 2rem;
     color: ${props => props.theme.colors.primary};
     cursor: pointer;
+  }
+  @media(max-width:1120px){
+    width:100%;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
   }
 `;

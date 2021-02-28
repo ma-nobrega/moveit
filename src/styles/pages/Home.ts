@@ -8,6 +8,12 @@ export const Container = styled.div`
     grid-template-areas:
     'HD CT';
     gap: 0 2rem;
+    @media(max-width:1120px){
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content: flex-start;
+    }
 `
 
 export const Content = styled.div`

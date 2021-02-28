@@ -69,6 +69,9 @@ export const Active = styled.div`
     p{
       line-height: 1.5;
     }
+    img{
+      margin: 2rem 0 1.5rem 0;
+    }
   }
   footer{
     display: grid;

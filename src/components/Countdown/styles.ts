@@ -7,6 +7,7 @@ export const Container = styled.div`
   display:flex;
   flex-direction:column;
   justify-content: center;
+  order:3;
 `;
 
 export const Timer = styled.div`
